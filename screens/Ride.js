@@ -62,8 +62,8 @@ export default class RideScreen extends Component {
         //Verifique a disponibilidade da bicicleta usando a função 'checkBikeAvailability()' 
         //e passando o argumento 'bikeId'
         //Armazene o status em uma variável 'transactionType'
-
-
+        var transactionType = await this.checkBikeAvailability(bikeId);
+        
 
         
         if (!transactionType) {
